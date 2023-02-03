@@ -598,7 +598,7 @@ Form Controls</title>
 		<div class="container">
 			<!-- BEGIN PAGE TITLE -->
 			<div class="page-title">
-				<h1>Müşteri<small>Yeni Müşteri</small></h1>
+				<h1>Ürün<small>Yeni Kayıt</small></h1>
 			</div>
 			<!-- END PAGE TITLE -->
 			<!-- BEGIN PAGE TOOLBAR -->
@@ -747,14 +747,14 @@ Form Controls</title>
 			<!-- BEGIN PAGE BREADCRUMB -->
 			<ul class="page-breadcrumb breadcrumb">
 				<li>
-					<a href="#">Ekran İçerikleri</a><i class="fa fa-circle"></i>
+					<a href="#">Tanımlar</a><i class="fa fa-circle"></i>
 				</li>
 				<li>
-					<a href="#">Sipariş Durumu</a>
+					<a href="#">Ürün</a>
 					<i class="fa fa-circle"></i>
 				</li>
 				<li>
-					<a href="siparisdurumu_yeni.html">Yeni Sipariş Durumu</a>
+					<a href="urun_yeni.html">Yeni Kayıt</a>
 					<i class="fa fa-circle"></i>
 				</li>
 			</ul>
@@ -790,22 +790,68 @@ Form Controls</title>
 							<form role="form" class="form-horizontal">
 								<div class="form-body">
 									<div class="form-group form-md-line-input">
-										<label class="col-md-2 control-label" for="form_control_1">Sipariş Durumu</label>
+										<label class="col-md-2 control-label" for="form_control_1">Ürün Adı</label>
 										<div class="col-md-10">
-											<input type="text" class="form-control" id="form_control_1" placeholder="Sipariş durumunu yazıınız">
+											<input type="text" class="form-control" id="form_control_1" placeholder="Ürün adını yazınız">
+											<div class="form-control-focus">
+											</div>
+										</div>
+									</div>
+									<div class="form-group form-md-line-input">
+										<label class="col-md-2 control-label" for="form_control_1">Ürün Kodu</label>
+										<div class="col-md-10">
+											<input type="text" class="form-control" id="form_control_1" placeholder="Ürün kodunu yazınız">
+											<div class="form-control-focus">
+											</div>
+										</div>
+									</div>
+									<div class="form-group form-md-line-input">
+										<label class="col-md-2 control-label" for="form_control_1">Ürün Fiyatı</label>
+										<div class="col-md-10">
+											<input type="text" class="form-control" id="form_control_1" placeholder="Ürün fiyatını yazınız">
 											<div class="form-control-focus">
 											</div>
 										</div>
 									</div>
 									
-								
+									<div class="form-group form-md-line-input">
+										<label class="col-md-2 control-label" for="form_control_1">Para Birimi</label>
+										<div class="col-md-10">
+											<select class="form-control" id="form_control_1">
+												<option value=""></option>
+												<option value="">Lütfen seçiniz</option>
+												<option value="">TL</option>
+												<option value="">Euro</option>
+												<option value="">Dolar</option>
+											</select>
+											<div class="form-control-focus">
+											</div>
+										</div>
+									</div>
+									<div class="form-group form-md-line-input">
+										<label class="col-md-2 control-label" for="form_control_1">Stok Adedi</label>
+										<div class="col-md-10">
+											<input type="text" class="form-control" id="form_control_1" placeholder="Stok miktarını yazınız">
+											<div class="form-control-focus">
+											</div>
+										</div>
+									</div>
+									<div class="form-group form-md-line-input has-success">
+										<label class="col-md-2 control-label" for="form_control_1">Açıklama</label>
+										<div class="col-md-10">
+											<textarea class="form-control" rows="3" placeholder="Açıklama yazınız"></textarea>
+											<div class="form-control-focus">
+											</div>
+										</div>
+									</div>
+									
 									
 								</div>
 								<div class="form-actions">
 									<div class="row">
 										<div class="col-md-offset-2 col-md-10">
-											<button type="button" class="btn default">Kaydet</button>
-											<button type="button" class="btn blue">Vazgeç</button>
+											<button type="button" class="btn default">Cancel</button>
+											<button type="button" class="btn blue">Submit</button>
 										</div>
 									</div>
 								</div>
